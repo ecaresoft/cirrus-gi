@@ -1,0 +1,589 @@
+@font-face {
+  font-family: 'Proxima';
+  src: url(../fonts/proximanova-regular-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-regular-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-regular-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-regular-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-regular-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-style: italic;
+  src: url(../fonts/proximanova-regitalic-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-regitalic-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-regitalic-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-regitalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-regitalic-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 300;
+  src: url(../fonts/proximanova-light-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-light-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-light-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-light-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  src: url(../fonts/proximanova-semibold-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-semibold-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-semibold-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-semibold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-semibold-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  font-style: italic;
+  src: url(../fonts/proximanova-semibolditalic-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-semibolditalic-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-semibolditalic-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-semibolditalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: bold;
+  src: url(../fonts/proximanova-bold-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-bold-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-bold-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-bold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-bold-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/proximanova-boldit-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-boldit-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-boldit-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-boldit-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-boldit-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 900;
+  src: url(../fonts/proximanova-extrabold-webfont.eot?1307578394);
+  src: url('../fonts/proximanova-extrabold-webfont.eot?iefix') format('eot'), url(../fonts/proximanova-extrabold-webfont.woff?1307578394) format('woff'), url(../fonts/proximanova-extrabold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+body,
+h1,
+a,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+div {
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+input,
+button,
+select,
+textarea {
+  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn-default {
+  background-color: transparent;
+  border-color: #2ecc71;
+  border-width: 2px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #2ecc71;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-default:hover {
+  background-color: #2ecc71;
+  border-color: transparent;
+  color: #29323a;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-primary {
+  background-color: #2ecc71;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 0%);
+  color: #fff;
+  border-width: 0px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 150px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #2ecc71;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 0%);
+  border-width: 0px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-secondary {
+  background-color: #00b9c7;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 0%);
+  color: #fff;
+  border-width: 0px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 150px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.btn-secondary:hover {
+  background-color: #00b9c7;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 0%);
+  border-width: 0px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-info {
+  background-color: #c8ced5;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 0%);
+  color: #9299a0;
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.btn-info:hover {
+  background-color: #c8ced5;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 0%);
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #9299a0;
+  text-decoration: none;
+}
+.btn-success {
+  background-color: #4a5560;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 0%);
+  color: #fff;
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  font-weight: bold;
+  margin-left: 30px;
+  width: 150px;
+}
+.btn-success:hover {
+  background-color: #4a5560;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 0%);
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-default-cirrus {
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 2px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-default-cirrus:hover {
+  background-color: #fff;
+  border-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-success-cirrus {
+  background-color: #061623;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 0%);
+  color: #fff;
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  font-weight: bold;
+  width: 150px;
+}
+.btn-success-cirrus:hover {
+  background-color: #061623;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 0%);
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-success-cirrusgi {
+  background-color: #9364cc;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 0%);
+  color: #fff;
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  font-weight: bold;
+  width: 150px;
+}
+.btn-success-cirrusgi:hover {
+  background-color: #9364cc;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 0%);
+  border-width: 0px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-search .search-query {
+  font-family: "PlutoSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-blue {
+  color: #00b9c7;
+}
+.text-lightBlue {
+  color: #7cedf6;
+}
+.text-teal {
+  color: #3fbfad;
+}
+.text-lightGray {
+  color: #9299a0;
+}
+.text-gray {
+  color: #29323a;
+}
+.text-mediumGray {
+  color: #4a5560;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-green {
+  color: #2ecc71;
+}
+.text-red {
+  color: #ec0044;
+}
+.text-darkGray {
+  color: #1e262d;
+}
+.text-purple {
+  color: #9364cc;
+}
+.header {
+  background: url(../img/background-1.jpg) no-repeat top center;
+  padding-top: 170px;
+  padding-bottom: 60px;
+  margin-top: -90px;
+  text-align: center;
+  width: 100%;
+}
+.navbar {
+  padding-top: 20px;
+}
+.arriba {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background-color: #121e27;
+}
+.about {
+  padding-top: 80px;
+  text-align: center;
+  line-height: 20px;
+  padding-bottom: 60px;
+}
+.banner {
+  background-color: #ebf1f5;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.banner2 {
+  padding-top: 30px;
+}
+.testimonials {
+  background-color: #33c6d2;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.testimonials h4 {
+  padding-bottom: 15px;
+}
+.offices {
+  background: url(../img/background-2.jpg) no-repeat top center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.offices p {
+  font-size: 14px;
+}
+.footer {
+  background: #121e27;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.footer p,
+a {
+  font-size: 12px;
+  color: #4a5560;
+  text-align: left;
+}
+.footer img {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.content {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.content p {
+  padding-top: 20px;
+}
+hr {
+  margin-top: -10px;
+}
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+p {
+  font-size: 14px;
+}
+a:hover {
+  color: #2ecc71;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2ecc71;
+  text-decoration: none;
+}
+li a {
+  font-size: 13px;
+  color: #4a5560;
+  font-weight: bold;
+  padding-right: 50px;
+}
+li a:hover {
+  color: #2ecc71;
+  text-decoration: none;
+}
+img.img-center {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -25px;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 22px;
+}
+.margin-top {
+  margin-top: 25px;
+}
+.margin-extratop {
+  margin-top: 70px;
+}
+.margin-bottom {
+  margin-bottom: 50px;
+}
+.subheader {
+  background: url(../img/back-nosotros.jpg) no-repeat top center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.nosotros {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.nosotros p {
+  padding-top: 20px;
+}
+.equipo {
+  background: #ecf0f1;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.equipo img {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.alianzas {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.alianzas img {
+  padding-top: 20px;
+}
+.contacto {
+  background-color: #00b9c7;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.contacto h3 {
+  margin-top: 0px;
+}
+.ubicacion {
+  background: url(../img/ubicacion.jpg) no-repeat top center;
+  background-size: 100%;
+  height: 250px;
+}
+#form2 textarea,
+#form2 input {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #fff;
+}
+.trabajos {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.bolsa {
+  background-color: #ecf0f1;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.header-cirrus {
+  background: url(../img/background-cirrus.jpg) no-repeat top center;
+  padding-top: 170px;
+  padding-bottom: 60px;
+  margin-top: -90px;
+  text-align: center;
+  width: 100%;
+}
+.header-cirrus h4 {
+  padding-bottom: 40px;
+}
+.header-cirrus img {
+  padding-bottom: 40px;
+}
+.navbar-cirrus {
+  padding-top: 20px;
+}
+.navbar-cirrus a {
+  color: #fff;
+}
+.navbar-cirrus a:hover {
+  color: #29323a;
+}
+.submenu-cirrus {
+  background-color: #ebf1f5;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.modulos-cirrus {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.modulos-cirrus hr {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.modulos-cirrus p {
+  color: #4a5560;
+}
+.modulos-cirrus h4 {
+  text-align: center;
+}
+.modulos-cirrus h2 {
+  color: #4a5560;
+  padding-bottom: 20px;
+}
+.servicios-cirrus {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.servicios-cirrus hr {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.banner-cirrus {
+  background-color: #2ecc71;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.banner-cirrus2 {
+  background-color: #00b085;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.banner-cirrus3 {
+  background-color: #3fbfad;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.subheader-cirrus {
+  background: url(../img/back-nosotros.jpg) no-repeat top center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.ece-cirrus {
+  background-color: #ebf1f5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.ece-cirrus h2 {
+  text-align: center;
+  color: #4a5560;
+}
+.header-cirrusgi {
+  background: url(../img/background-cirrusgi3.jpg) no-repeat top center;
+  padding-top: 170px;
+  padding-bottom: 60px;
+  margin-top: -90px;
+  text-align: center;
+  width: 100%;
+}
+.header-cirrusgi h4 {
+  padding-bottom: 40px;
+}
+.header-cirrusgi img {
+  padding-bottom: 40px;
+}
+.clientes-cirrusgi {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ebf1f5;
+}
+.clientes-cirrusgi hr {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-color: #9299a0;
+}
+.clientes-cirrusgi h4 {
+  line-height: 5px;
+  padding-top: 5px;
+}
+img.img-centergi {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 22px;
+}
+.contacto-gi {
+  background-color: #344051;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.contacto-gi h3 {
+  margin-top: 0px;
+}
+.banner-gi {
+  background-color: #4a5560;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
