@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cirrus-Gi eCareSoft Mexico</title>
+  <title>Cirrus-GI eCareSoft Mexico</title>
   <!-- styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
@@ -17,17 +17,14 @@
 
   <!-- JS STUFF -->
   <!-- <script src="//squaresend.com/squaresend.js"></script> -->
-  <script type="text/javascript">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20755856-4']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  ga('create', 'UA-20755856-8', 'auto');
+  ga('send', 'pageview');
 
   </script>
 </head>
@@ -63,10 +60,10 @@
   		<div class="row">
         <div class= "col-md-6 col-md-offset-3">
         	<img src="img/logo-cirrusgi.png">
-          <h1><span class="text-white">¿SABÍAS QUE TÚ HOSPITAL DEJA DE FACTURAR ENTRE UN 5% Y UN 10% POR NO TENER CIRRUS-Gi?</span></h1>
+          <h1><span class="text-white">¿SABÍAS QUE TÚ HOSPITAL DEJA DE FACTURAR ENTRE UN 5% Y UN 10% POR NO TENER CIRRUS-GI?</span></h1>
           </div>
           <div class= "col-md-6 col-md-offset-3">
-          <h4><span class="text-white">Gestiona eficientemente el ciclo de ingresos de tú hospital desde la nube con eCS Cirrus-Gi, un modelo de precios accesibles y en un tiempo récord de 3 meses.<br>¿Quieres saber cómo?</span></h4>
+          <h4><span class="text-white">Gestiona eficientemente el ciclo de ingresos de tú hospital desde la nube con eCS Cirrus-GI, un modelo de precios accesibles y en un tiempo récord de 3 meses.<br>¿Quieres saber cómo?</span></h4>
 
         </div>
       </div>  
@@ -350,11 +347,20 @@
   <div class="modal-body">
   </div>
 </div>
-</body>
-
-<script src="js/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script> 
-
-
+<script type="text/javascript">
+  var $root = $('html, body');
+  $('a').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+          scrollTop: $(href).offset().top 
+      }, 500, function () {
+          window.location.hash = href;
+      });
+      return false;
+  });
+</script>
+</body>
 </hmtl>
 
